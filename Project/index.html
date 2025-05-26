@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos-duration="1000">
+                <span>ARUN KUMAR</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="#">Home</a></div>
+                <div class="link"><a href="#">About</a></div>
+                <div class="link"><a href="#">Skill</a></div>
+                <div class="link"><a href="#">Service</a></div>
+                <div class="link"><a href="#">Blogs</a></div>
+                <div class="link content-btn"><a href="#">Contact Us</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Skill</a>
+            <a href="">Service</a>
+            <a href="">Blogs</a>
+            <a href="">Contact Us</a>
+            <i class="fa-solid fa-xmark cancle" onclick="cancle()"></i>
+        </div>
+    </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="IMG_2025_05_23_0812571690.jpg">
+            </div>
+            <div class="content">
+                <h1>Hey I'm<span>ARUN KUMAR</span></h1>
+                <div class="typewritter">I'm a<span></span></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quidem natus totam officiis vitae et libero nobis soluta? Vel accusamus itaque doloribus repudiandae rerum esse quos impedit tempora fugiat eligendi.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(offset:0);
+  </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector("dropdown")
+            navbar.style.transform="translateY(0px)"
+        }
+        function cancle(){
+            const navbar = document.querySelector("dropdown")
+            navbar.style.transform="translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
